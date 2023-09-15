@@ -195,26 +195,133 @@ Registration for LOPSTR 2023 is available through the <a href="https://2023.spla
   </section>
 
   <!-- Invited speakers -->
-    <section class="page-section" id="invited_speakers">
-      <div class="container" >
-        <div class="text-center">
-          <h2 class="section-heading text-uppercase">Invited speakers</h2>
-        </div>
-        <p class="text-justify">
-          <div class="col-10">
-            <ul>
-              <li> <a href="https://software.imdea.org/people/manuel.hermenegildo/"> Manuel Hermenegildo </a>, IMDEA Software Institute and
-  Universidad Politecnica de Madrid, Spain. <b>On-The-Fly Verification via Incremental, Interactive Abstract Interpretation with CiaoPP and VeriFly.</b></li>
+<!-- Invited Speakers---------------------------------------------------------->
+<section class="page-section" id="speakers">
+    <div class="container">
+      <div class="text-center">
+          <h2 class="section-heading"><span class="text-uppercase">Invited Speakers</span></h2>
+      </div>
+<br><br>
+        <table class="table">
+          <tbody>
+            <tr>
+              <td><strong>
+                  <a href="https://software.imdea.org/people/manuel.hermenegildo/"> Manuel Hermenegildo </a>, IMDEA Software Institute and Universidad Politecnica de Madrid, Spain.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="font-weight-bold">Title</span>:
+                <span class="font-italic">On-The-Fly Verification via Incremental, Interactive Abstract Interpretation with CiaoPP and VeriFly</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="font-weight-bold">Abtract</span>:
+                <span>
+Ciao Prolog pioneered the idea of being able to optionally and gradually
+add assertions or contracts to programs in order to offer formal guarantees, a
+now very popular solution for solving the classic trade-offs between dynamic
+and static languages. This approach is enabled by Ciao’s program analysis and
+verification framework, CiaoPP, which performs abstract interpretation-based,
+context- and path-sensitive analysis to infer information against which assertions
+are checked to achieve verification or flag errors statically.
+The framework supports multiple other languages in addition to Prolog, from
+machine code to smart contracts, by translation into Horn clauses. Program
+semantics is computed over different user-definable abstract domains, via efficient
+fixpoint computation. This allows inference and verification of both functional
+and non-functional properties, including, e.g., energy or ’gas’ consumption.
+<br>
+While this type of verification can be performed offline (e.g., as part of con-
+tinuous integration) it is very useful when it occurs interactively during software
+development, flagging errors as the program is written. However, while context-
+and path-sensitive global analysis over complex domains can provide the preci-
+sion needed for effective verification and optimization, it can also be expensive
+when applied to large code bases, sometimes making interactive use impracti-
+cal. On the other hand, in many program development situations modifications
+are small and isolated within a few components. The modular and incremental
+fixpoint algorithms used by CiaoPP take advantage of this to reuse as much as
+possible previous analysis results, reducing response times in interactive use.
+<br>
+In this talk we will review these ideas and show how the integration of the
+Ciao abstract interpretation framework within different IDEs takes advantage of
+our efficient and incremental fixpoint to achieve effective verification on-the-fly,
+as the program is developed. We also demonstrate a number of embeddings of
+this framework within the browser, and show as an example an application for
+building interactive tutorials, which we have used for teaching verification and
+abstract interpretation.
 
-       <li> <a href="https://www.kcl.ac.uk/people/maribel-fernandez">
-          Maribel Fernandez </a>, King's College London, UK (Jointly with <a href="https://ppdp2023.webs.upv.es/">PPDP </a>). <b>Unification modulo equational theories in languages with binding operators. </b></li>
-            </ul>
-          </div>
-        </p>
-  </div>
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table">
+          <tbody>
+            <tr>
+              <td><strong>
+              <a href="https://www.kcl.ac.uk/people/maribel-fernandez">Maribel Fernandez </a>, King's College London, UK (Jointly with <a href="https://ppdp2023.webs.upv.es/">PPDP </a>). 
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="font-weight-bold">Title</span>:
+                <span class="font-italic">Unification modulo equational theories in languages with binding operators</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="font-weight-bold">Abtract</span>:
+                <span>
+Unification (i.e., solving equations between terms) is a key step in
+the implementation of logic programming languages and theorem provers,
+and is also used in type inference algorithms for functional languages
+and as a mechanism to analyse rewrite-based specifications (e.g., to
+find critical pairs). Matching is a version of unification in which
+only one of the terms in the equation can be instantiated.
+<br>
+Often, operators satisfy equational axioms (e.g., associativity,
+commutativity), which must be taken into account during the
+unification or matching process. In addition, when the expressions to
+be unified involve binding operators (as is the case when representing
+programs, logics, computation models, etc.), unification and matching
+algorithms must take into account the alpha-equivalence relation
+generated by the binders.
+<br>
+In this talk, we present matching and unification algorithms for
+languages that include binding operators as well as operators that
+satisfy equational axioms, such as associativity and commutativity.
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
   </section>
 
+  <!--   <section class="page-section" id="invited_speakers"> -->
+  <!--     <div class="container" > -->
+  <!--       <div class="text-center"> -->
+  <!--         <h2 class="section-heading text-uppercase">Invited speakers</h2> -->
+  <!--       </div> -->
+  <!--       <p class="text-justify"> -->
+  <!--         <div class="col-10"> -->
+  <!--           <ul> -->
+  <!--             <li> <a href="https://software.imdea.org/people/manuel.hermenegildo/"> Manuel Hermenegildo </a>, IMDEA Software Institute and -->
+  <!-- Universidad Politecnica de Madrid, Spain. <b>On-The-Fly Verification via Incremental, Interactive Abstract Interpretation with CiaoPP and VeriFly.</b></li> -->
 
+  <!--      <li> <a href="https://www.kcl.ac.uk/people/maribel-fernandez"> -->
+  <!--         Maribel Fernandez </a>, King's College London, UK (Jointly with <a href="https://ppdp2023.webs.upv.es/">PPDP </a>). <b>Unification modulo equational theories in languages with binding operators. </b></li> -->
+  <!--           </ul> -->
+  <!--         </div> -->
+  <!--       </p> -->
+  <!-- </div> -->
+  <!--   </section> -->
+
+
+
+
+    
 <!-- Important Dates -->
   <section class="page-section" id="dates">
     <div class="container" >
@@ -293,6 +400,217 @@ Registration for LOPSTR 2023 is available through the <a href="https://2023.spla
 
 
 
+ <!-- Program -->
+    <section class="page-section bg-light" id="program">
+      <div class="container">
+        <h2 class="section-heading text-uppercase text-center">Program &amp; Schedule</h2>
+
+        <p>All times are in Portugal Time which is UTC +1.</p>
+
+          <!-- <p> <strong>LOPSTR Room: 212 </strong>(First Floor). <br> -->
+          <!--     <strong>Shared invited talks</strong> will be in <strong> Room 202 (PPDP Room) </strong></p> -->
+
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th colspan="2" class="table-dark text-center">Monday, October 23  </th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <th scope="row">11:00 - 11:10</th>
+              <td>
+                <strong>OPENING</strong>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <br></br>
+                <p>11:10-12:10</p>
+                <p>12:10-12:30</p>
+              </th>
+              <td>
+                <p><strong>SESION I. </strong><em>Chairs : </em>Robert G. and Santiago Escobar </p>
+                <ul class="pt-1 pl-3">
+                  <li>
+                    <strong>Invited Talk PPDP+LOPSTR</strong>
+                    <em>Unification modulo equational theories in languages with binding operators</em>. <br>
+                      Maribel Fernandez
+                  </li>
+                  <li>
+                    <em>Towards a Certified Proof Checker for Deep Neural Network Verification</em>. <br>
+                    Remi Desmartin, Omri Isac, Grant Passmore, Kathrin Stark, Guy Katz and Ekaterina Komendantskaya
+                 </li>
+                </ul>
+              </td>
+            </tr>
+            
+            <tr>
+              <th scope="row">12:30 - 14:00</th>
+              <td>Lunch Break</td>
+            </tr>
+
+            <tr>
+              <th scope="row">
+                <br></br>
+                <p>14:00-14:35</p>
+                <p>14:35-15:10</p>
+                <p>15:10-15:30</p>
+              </th>
+              <td>
+                <p><strong>SESION II. </strong><em>Chairs : </em>TBA</p>
+                <ul class="pt-1 pl-3">
+                  <li>
+                    <em>A reusable machine-calculus for automated resource analyses</em>. <br>
+                    Hector Suzanne and Emmmanuel Chailloux
+                  </li>
+                  <li>
+                    <em>A Logical Interpretation of Asynchronous Multiparty Compatibility</em>. <br>
+                    Marco Carbone, Sonia Marin and Carsten Schuermann
+                  </li>
+                  <li>
+                    <em>Relational Solver for Java Generics Type System</em>. <br>
+                    Peter Lozov, Dmitry Kosarev, Dmitry Ivanov and Dmitry Boulytchev
+                 </li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row">15:30 - 16:00</th>
+              <td>Coffee Break</td>
+            </tr>
+
+            <tr>
+              <th scope="row">
+                <br></br>
+                <p>16:00-16:35</p>
+                <p>16:35-17:10</p>
+                <p>17:10-17:20</p>
+              </th>
+              <td>
+                <p><strong>SESION III. </strong><em>Chairs : </em>TBA</p>
+                <ul class="pt-1 pl-3">
+                  <li>
+                    <em>A Rule-Based Approach for Designing and Composing Abstract Domains</em>. <br>
+                    Daniel Jurjo, Jose F. Morales, Pedro Lopez-Garcia and Manuel V. Hermenegildo
+                  </li>
+                  <li>
+                    <em>Design Datalog Templates for Synthesizing Bidirectional Programs from Tabular Examples</em>. <br>
+                    Bach Nguyentrong, Kanae Tsushima and Zhenjiang Hu
+                  </li>
+                  <li>
+                    <em>Best Paper Awards</em>. <br>
+                <br></br>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+                <table class="table table-striped">
+          <thead>
+            <tr>
+              <th colspan="2" class="table-dark text-center">Tuesday, October 24  </th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <th scope="row">
+                <br></br>
+                <p>9:00-10:00</p>
+                <p>10:00-10:30</p>
+              </th>
+              <td>
+                <p><strong>SESION IV. </strong><em>Chairs : </em>TBA </p>
+                <ul class="pt-1 pl-3">
+                  <li>
+                    <strong>Invited Talk</strong>
+                    <em>On-The-Fly Verification via Incremental, Interactive Abstract Interpretation with CiaoPP and VeriFly.</em> <br>
+                    Manuel V. Hermenegildo
+                  </li>
+                  <li>
+                    <em>A term matching algorithm and substitution generality</em>. <br>
+                    Marija Kulas
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            
+            <tr>
+              <th scope="row">10:30 - 11:00</th>
+              <td>Coffee Break</td>
+            </tr>
+
+            <tr>
+              <th scope="row">
+                <br></br>
+                <p>11:00-11:35</p>
+                <p>11:35-12:10</p>
+                <p>12:10-12:30</p>
+              </th>
+              <td>
+                <p><strong>SESION V. </strong><em>Chairs : </em>TBA</p>
+                <ul class="pt-1 pl-3">
+                  <li>
+                    <em>Predicate Anti-unification in (Constraint) Logic Programming</em>. <br>
+                    Gonzague Yernaux and Wim Vanhoof
+                  </li>
+                  <li>
+                    <em>A novel EGs-based framework for systematic propositional-formula simplification</em>. <br>
+                    Jordina Francès de Mas and Juliana Bowles
+                  </li>
+                  <li>
+                    <em>From Static to Dynamic Access Control Policies via Attribute-Based Category Mining</em>. <br>
+                    Anna Bamberger and Maribel Fernandez
+                  </li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row">12:30 - 14:00</th>
+              <td>Lunch Break</td>
+            </tr>
+
+            <tr>
+              <th scope="row">
+                <br></br>
+                <p>14:00-14:35</p>
+                <p>14:35-14:55</p>
+                <p>14:55-15:05</p>
+              </th>
+              <td>
+                <p><strong>SESION VI. </strong><em>Chairs : </em>TBA</p>
+                <ul class="pt-1 pl-3">
+                  <li>
+                    <em>Constrained Horn Clauses Satisfiability via Catamorphic Abstractions</em>. <br>
+                    Emanuele De Angelis, Fabio Fioravanti, Alberto Pettorossi and Maurizio Proietti
+                  </li>
+                  <li>
+                    <em>Transforming big-step to small-step semantics using interpreter specialisation</em>. <br>
+                    John P. Gallagher, Manuel V. Hermenegildo, Jose F. Morales and Pedro Lopez-Garcia
+                  </li>
+                  <li>
+                    <em>Closing and Adjourn</em>. <br>
+                <br></br>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+
+
+    <!-- Paper submission -->
+    
+
           <section class="page-section" id="submission">
             <div class="container">
               <div class="text-center">
@@ -346,11 +664,6 @@ Registration for LOPSTR 2023 is available through the <a href="https://2023.spla
               </section>
       </div>
     </section>
-
-
-
-
-
 
 <!-- Sumbmission ---------------------------------------------------------->
     <section class="page-section bg-light" id="submission">
