@@ -152,7 +152,7 @@ Maja Kirkeby, Roskilde University, Denmark
 Ekaterina Komendantskaya, University of Southampton, England
 Fred Mesnard, University of Reunion, France
 Koji Nakazawa, Nagoya University, Japan
-Pedro Lopez-Garcia, IMDEA Software Institute, Spain
+Pedro Lopez-Garcia, CSIC and IMDEA Software Institute, Spain
 Harald Søndergaard, The University of Melbourne, Australia
 Theresa Swift, University Nova Lisbon, Portugal
 Laura Titolo, AMA/NASA Research, VA, USA
