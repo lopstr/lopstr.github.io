@@ -480,12 +480,147 @@ The early bird rate applies until 30 July.
   </div>
 </section>
 
-<!-- Invited Speakers -->
-<!-- <section class="page-section" id="speakers">
+<!-- Invited Talks -->
+<section class="page-section" id="speakers">
   <div class="container">
+    <div class="text-center">
+      <h2 class="section-heading"><span class="text-uppercase">Invited Talks</span></h2>
+    </div>
+    <br><br>
+    <table class="table">
+      <tbody>
+        <tr>
+          <td>
+            <strong>
+              <a href="https://www.dcc.fc.up.pt/~vsc/" target="_blank">V&iacute;tor Santos Costa</a>, 
+            </strong>
+            University of Porto, Portugal, speaker sponsored by ALP
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <em>Logic-Based Neural Networks</em>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="font-weight-bold">Abstract</span>:
+            <br><br>
+            <span>
+<p>
+Progress in computing thrives from progress in a diversity of fields.
+Matrices and Linear Algebra, an old stalwart of computing, are nowadays
+at the core of much work in Artificial Intelligence.
+Formalisms based on Mathematical Logic, such as propositional logic,
+datalog, or logic programming enable principled programming where one
+can distinguish meaning from execution.
+Graphs arise naturally in programming, and are often used to understand
+properties of data.
+</p><p>
+The presentation starts by quickly mentioning some important properties
+connecting these areas.
+Graphs can encode programs, and they can be encoded as matrices,
+which can be encoded by programs themselves.
+This connection has led to interest in combining the approaches into a
+single system, and has led to developments such as Statistical Relational
+Learning (SRL) and the neuro-symbolic systems.
+</p><p>
+The SRL approach is about dealing with uncertainty on structured domains.
+In a simplest form, it can be seen as extending a graphical
+network with repeated information: say, students that perform well
+in Algebra I will also perform well in Algebra II. Logical rules can be
+used to express this common information, as exemplified in CLP(BN),
+an extension of Prolog that builds directed acyclic graphs with
+probabilistic annotations, that is, Bayesian networks. A different
+approach is used in Problog. This language is also based in Prolog,
+but it softens the language by introducing Probabilistic facts.
+These facts can be used to abduce on different values, but
+they can also be used to give probability to rules.
+One should also mention Markov Logic Networks.
+In these models, logic atoms are connected in clauses.
+These connections generate an undirected graphical model.
+</p><p>
+One problem with these models is that they may require heavy temporal
+and memory resources and can quickly become expensive.
+Deep neural networks have become successful by implementing a compound
+function f = f<sub>0</sub> &#8226; f<sub>1</sub> ... f<sub>n</sub>, 
+where each f<sub>i</sub> is a layer.
+Layers can be implemented through matrices,
+and parameter learning can use the derivative of f to
+optimize parameters through gradient based search.
+</p><p>
+This development has led to rapid growth in the landscape of
+neuro-symbolic models.
+TensorLog is an influential example that constructs a deep neural network
+out of logical rules.
+This is achieved through restriction to chain-rules, where each goal has a
+single input variable, shared with the previous goal, and a single output
+variable, connected to the next goal.
+The model is suited for edge-detection problems, where it performs well,
+but is not ideal for pure classification.
+Several extensions have been proposed;
+we discuss how one, NeuralLog, tackles this problem.
+Notice these are but a few examples;
+very different approaches exist, such as Deep-Problog.
+</p><p>
+Meanwhile, there has been further progress in neural networks.
+Graph Neural Networks are close in many ways to logic based proposals,
+but are based on graph theory, so they approach learning in a different
+way to logic based systems.
+But focus has settled on Large Language Models.
+Although most developments are empirical, there exist already proposals
+for logic reasoning in LLMs, such as LOGIC-LLM and LOGICLM.
+We expect to see others soon.
+</p>
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="table">
+      <tbody>
+        <tr>
+          <td>
+            <strong>
+              <a href="https://xnning.github.io/ target="_blank"">Ningning Xie</a>, 
+            </strong>
+              University of Toronto, Canada, speaker shared with PPDP 2024
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <em>Safe and Easy Compile-Time Generative Programming</em>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="font-weight-bold">Abstract</span>:
+            <br><br>
+            <span>
+<p>
+Program generation is a powerful and expressive approach to eliminating
+abstraction overhead and improving program performance, which has been
+studied and implemented in a variety of languages with different forms.
+</p><p>
+In this talk we overview MacoCaml, a new design and implementation of
+compile-time computation for OCaml.
+MacoCaml features a unifying and novel combination of phase separation
+and quotation-based staging.
+We review MacoCaml's recent developments, including a comprehensive
+formalism of a feature-rich macro calculus with key meta-theoretic
+properties, and an extension to module functors that leads to explicit
+phase distinction.
+We describe how the meta-theoretical results offer practical benefits
+for programmers, and conclude the talk with a few directions for
+future exploration.
+</p>
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </section>
--->
 
 <!-- Overview -->
 <section class="page-section" id="overview">
